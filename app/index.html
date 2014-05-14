@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mealPlan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- endbuild -->
+    </head>
+<body>
+    <div class="container1">
+        <div class="header">
+           <div> <h2>Welcome to </h2><h1>Snack Roulette!</h1></div>
+        </div>
+
+        <div class="form3">
+            <div class="col-md-4">
+                <h3>I am in the mood for something</h3>
+                <select class="inMoodForInput">
+                    <option value="">...</option>
+                    <option value="sweet">sweet</option>
+                    <option value="spicy">spicy</option>
+                    <option>salty</option>
+                </select>
+            </div>             
+            <div class="col-md-4">
+                <h3>I like these kinds of foods</h3>
+                <select class="specialDietInput">
+                    <option value="">I eat everything</option>
+                    <option value="gluten-free">gluten-free</option>
+                    <option value="vegan">vegan</option>
+                    <option value="vegetarian">vegetarian</option>
+                    
+                    <option value="pescatarian">pescaterian</option>
+                   
+                </select>
+            </div>
+            <div class="col-md-4">  
+                <form id = "mealsForm" action="">
+                    <h3>This is what's in my fridge</h3>
+                    <section id="breakfastForm">
+                        <input type="text" id="breakfastInput">
+                    </section>
+                    <button class="btn btn-lg" type="submit">Submit</button>
+                </form>
+            </div>        
+                <div class="report">
+                </div>
+        </div>
+
+        <div class="foodSchedule">
+        </div>
+
+
+    </div> <!--end container-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+     <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+   
+    <!-- build:js scripts/plugins.js -->
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+
+    <script src="scripts/preferences.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/template.js"></script>
+
+
+
+    <!-- endbuild -->
+</body>
+</html>

@@ -349,7 +349,7 @@ module.exports = function (grunt) {
             dist: [
                 'sass',
                 'copy:styles',
-                'imagemin',
+                //this is where we removed the imagemin task
                 'svgmin'
             ]
         }

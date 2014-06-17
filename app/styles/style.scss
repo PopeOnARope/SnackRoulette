@@ -5,7 +5,7 @@
 // }
 .header{
 	height: 300px;
-	font-family: "Brush Script MT";
+	font-family: "Seravek";
 	div{
 		padding-top: 50px;
 		padding-left: 20%;
@@ -13,19 +13,23 @@
 	h1{	
 
 		font-size: 8em;
+		font-weight: 100;
 	}
 	h2{
-		font-size: 5em;
+		font-size: 4em;
 		padding: 25px, 0px, 0px, 100px;
+		font-weight: 300;
 	}
 	h1, h2 {margin: 0px;
-		color: #ee2;
-		text-shadow: 1px 2px 3px orange, 0 0 2em darkgreen, 0 0 0.4em black;
+		color: rgba(50,50,200,1);
+;
 	}
 	margin: 0px;
 	padding: 0px;
 	background-image: url('../images/mealRouletteheader.jpg');
-	background-size: 100%;
+	background-size: 75%;
+	background-position: center
+
 }
 .hh{
 	margin: 0px 0px 10px 0px;
@@ -73,9 +77,10 @@ a{
 }
 
 .form3 {
-	border-bottom: 10px solid green;
+	border-bottom: 10px solid skyblue;
 	min-height: 150px;
-	background-color: rgba(50, 175, 70, 0.9);
+	background-color: rgba(200,200,250, 0.9);
+	color: black;
 }
 
 .container1{
@@ -86,7 +91,7 @@ a{
 .mealColumn{
 	background-color: #eee;
 	-webkit-transition: .5s all ease;
-	-webkit-box-shadow: 0px 0px 7px 6px rgba(60,0,0,1);
+	-webkit-box-shadow: 0px 0px 7px 6px #aaa;
 	
 	img{
 		
@@ -105,9 +110,9 @@ a{
 		height: 55%;
 		width: auto;
 		margin-left: 0%;
-		border: 5px solid rgba(121,0,0,1);
+		border: 5px solid rgba(100,100,100,1);
 	}
-	-webkit-box-shadow: 0px 0px 12px 4px #222;
+	-webkit-box-shadow: 0px 0px 12px 4px #aaa;
 }
 	height: 275px;
 	margin: 2.5% 2%;
@@ -117,7 +122,7 @@ a{
 .foodSchedule{
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
-	-webkit-justify-content: space-between;
+	-webkit-justify-content: flex-start;
 	-webkit-flex-wrap: wrap;
 	-webkit-transition: .5s all ease;
 }
@@ -125,9 +130,42 @@ a{
 	margin: 2% auto;
 }
 .report{
-	color: #eea;
+	color: #000;
 	font-weight: 50;
 	h3{
 		margin: 0;
 	}
+}
+@media(max-width: 991px){
+	.col-md-4{
+		width: 30%;
+
+	}
+	.header{
+		background-color: white;
+		height: 300px;
+		font-family: "Seravek";
+	div{
+		padding-top: 50px;
+		padding-left: 5%;
+	}
+	h1{	
+
+		font-size: 5em;
+	}
+	h2{
+		font-size: 2em;
+		padding: 25px, 0px, 0px, 100px;
+		font-weight: 300;
+	}
+	h1, h2 {margin: 0px;
+		color: rgba(50,50,200,1);
+	}
+	margin: 0px;
+	padding: 0px;
+	background-image: url('../images/mealRouletteheader.jpg');
+	background-repeat: no-repeat;
+	background-width: 100%;
+	background-position-x: -50px;
+}
 }
